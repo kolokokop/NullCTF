@@ -167,7 +167,7 @@ class CTF(commands.Cog):
             sconf = serverdb[str(ctx.guild.id) + '-CONF']
             servarchive = sconf.find_one({'name': "archive_category_name"})['archive_category']
         except:
-            servarchive = "ARCHIVE" # default
+            servarchive = "PAST-CTFS" # default
 
         category = discord.utils.get(ctx.guild.categories, name=servarchive)
         if category == None: # Checks if category exists, if it doesn't it will create it.
