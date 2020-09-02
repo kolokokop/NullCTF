@@ -1,1 +1,1 @@
-worker: python nullctf.py
+worker: python3 nullctf.py
